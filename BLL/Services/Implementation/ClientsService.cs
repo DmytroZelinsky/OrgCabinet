@@ -9,22 +9,33 @@ namespace BLL.Services.Implementation
 	{
 		private readonly IClientsRepository _clientsRepository;
 		private readonly INotificationRepository _notificationRepository;
+		private readonly ClientNotificationFactory _factory;
 
 		public ClientsService(IClientsRepository clientsRepository, INotificationRepository notificationRepository)
 		{
 			_clientsRepository = clientsRepository;
 			_notificationRepository = notificationRepository;
+			_factory = new ClientNotificationFactory();
 		}
 
 		public void CreateClient(Client client)
 		{
 			_clientsRepository.Create(client);
 
-			var factory = new ClientNotificationFactory();
-
-			var notification = factory.CreateAddNotification(client);
+			var notification = _factory.CreateAddNotification(client);
 
 			_notificationRepository.Create(notification);
+		}
+
+		public void DeleteClient(int id)
+		{
+			var client = _clientsRepository.Get(id);
+
+			var notification = _factory.CreateDeleteNotification(client);
+
+			_notificationRepository.Create(notification);
+		
+			_clientsRepository.Delete(id);
 		}
 
 		public Client GetClient(int clientId)

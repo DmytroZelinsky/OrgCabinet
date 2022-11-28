@@ -9,5 +9,7 @@ namespace DAL.Repositories.Abstraction
 		Client Get(int id);
 
 		void Create(Client client);
+
+		void Delete(int id);
 	}
 }

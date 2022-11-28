@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+
+
 builder.Services.AddControllers().AddJsonOptions(x =>
 				x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
@@ -25,6 +27,8 @@ builder.Services.AddScoped<INotificationsService, NotificationsService>();
 builder.Services.AddScoped<INotificationRepository, MockNotificationRepository>();
 
 var app = builder.Build();
+app.UseCors(options => options.WithOrigins("http://localhost:3000").AllowAnyMethod());
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

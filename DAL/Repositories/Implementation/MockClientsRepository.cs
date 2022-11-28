@@ -12,6 +12,11 @@ namespace DAL.Repositories.Implementation
 			MockData.Clients.Add(client);
 		}
 
+		public void Delete(int id)
+		{
+			MockData.Clients.RemoveAll(c => c.Id == id);
+		}
+
 		public Client Get(int id)
 		{
 			return MockData.Clients.First(c => c.Id == id);

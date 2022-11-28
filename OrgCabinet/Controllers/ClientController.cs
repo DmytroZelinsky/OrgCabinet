@@ -34,5 +34,11 @@ namespace OrgCabinet.Controllers
 		{
 			_clientsService.CreateClient(client);
 		}
+
+		[HttpDelete("{id}")]
+		public void Delete(int id)
+		{
+			_clientsService.DeleteClient(id);
+		}
 	}
 }

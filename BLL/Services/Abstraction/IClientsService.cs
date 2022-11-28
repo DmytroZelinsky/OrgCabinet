@@ -9,5 +9,6 @@ namespace BLL.Services.Abstraction
 		Client GetClient(int clientId);
 
 		void CreateClient(Client client);
+		void DeleteClient(int id);
 	}
 }

@@ -9,10 +9,10 @@ namespace EntityLayer.Entities.Service
 	{
 		public Service()
 		{
-			_state = new OpenState();
+			State = new OpenState();
 		}
 
-		private State _state { get; set; }
+		public State State { get; set; }
 
 		public int ClientId { get; set; }
 		public Client Client { get; set; }
@@ -30,37 +30,37 @@ namespace EntityLayer.Entities.Service
 
 		public void SetState(State state)
 		{
-			_state = state;
+			State = state;
 		}
 
 		public void ChangeStateToOpen()
 		{
-			_state.ChangeStateToOpen();
+			State.ChangeStateToOpen();
 		}
 
 		public void ChangeStateToInProgress()
 		{
-			_state.ChangeStateToInProgress();
+			State.ChangeStateToInProgress();
 		}
 
 		public void ChangeStateToResolved()
 		{
-			_state.ChangeStateToResolved();
+			State.ChangeStateToResolved();
 		}
 
 		public void ChangeStateToClosed()
 		{
-			_state.ChangeStateToClosed();
+			State.ChangeStateToClosed();
 		}
 
 		public void ChangeStateToPostponed(string reason)
 		{
-			_state.ChangeStateToPostponed(reason);
+			State.ChangeStateToPostponed(reason);
 		}
 
 		public void ChangeStateToCanceled(string reason)
 		{
-			_state.ChangeStateToCanceled(reason);
+			State.ChangeStateToCanceled(reason);
 		}
 	}
 }
