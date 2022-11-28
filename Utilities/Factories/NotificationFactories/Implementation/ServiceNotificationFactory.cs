@@ -19,7 +19,8 @@ namespace Utilities.Factories.NotificationFactories.Implementation
 				{
 					Type = NotificationType.ServiceNotification,
 					DateCreated = DateTime.Now,
-					NotificationString = string.Format(NotificationTemplates.SERVICE_ADDED_NOTIFICATION, service.Id)
+					NotificationString = string.Format(NotificationTemplates.SERVICE_ADDED_NOTIFICATION, service.Id),
+					EntityId = service.Id
 				};
 			}
 			else
@@ -36,7 +37,8 @@ namespace Utilities.Factories.NotificationFactories.Implementation
 				{
 					Type = NotificationType.ServiceNotification,
 					DateCreated = DateTime.Now,
-					NotificationString = string.Format(NotificationTemplates.SERVICE_DELETED_NOTIFICATION, service.Id)
+					NotificationString = string.Format(NotificationTemplates.SERVICE_DELETED_NOTIFICATION, service.Id),
+					EntityId = service.Id
 				};
 			}
 			else

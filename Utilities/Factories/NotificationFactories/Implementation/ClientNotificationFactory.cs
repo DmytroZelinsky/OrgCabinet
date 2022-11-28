@@ -15,11 +15,12 @@ namespace Utilities.Factories.NotificationFactories.Implementation
 		{
 			if (entity is Client client)
 			{
-				return new ServiceNotification()
+				return new ClientNotification()
 				{
 					Type = NotificationType.ClientNotification,
 					DateCreated = DateTime.Now,
-					NotificationString = string.Format(NotificationTemplates.CLIENT_ADDED_NOTIFICATION, client.Id)
+					NotificationString = string.Format(NotificationTemplates.CLIENT_ADDED_NOTIFICATION, client.Id),
+					EntityId = client.Id
 				};
 			}
 			else
@@ -32,11 +33,12 @@ namespace Utilities.Factories.NotificationFactories.Implementation
 		{
 			if (entity is Client client)
 			{
-				return new ServiceNotification()
+				return new ClientNotification()
 				{
 					Type = NotificationType.ClientNotification,
 					DateCreated = DateTime.Now,
-					NotificationString = string.Format(NotificationTemplates.CLIENT_DELETED_NOTIFICATION, client.Id)
+					NotificationString = string.Format(NotificationTemplates.CLIENT_DELETED_NOTIFICATION, client.Id),
+					EntityId = client.Id
 				};
 			}
 			else
@@ -58,7 +60,7 @@ namespace Utilities.Factories.NotificationFactories.Implementation
 					changedDetails.AppendLine($"{field.Prop} : {field.valA} -> {field.valB}");
 				}
 
-				return new ServiceNotification()
+				return new ClientNotification()
 				{
 					Type = NotificationType.ServiceNotification,
 					DateCreated = DateTime.Now,

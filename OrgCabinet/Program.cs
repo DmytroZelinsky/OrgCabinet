@@ -17,8 +17,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IEmployeesService, EmployeesService>();
 builder.Services.AddScoped<IEmployeesRepository, MockEmployeeRepository>();
+
 builder.Services.AddScoped<IClientsService, ClientsService>();
 builder.Services.AddScoped<IClientsRepository, MockClientsRepository>();
+
+builder.Services.AddScoped<INotificationsService, NotificationsService>();
 builder.Services.AddScoped<INotificationRepository, MockNotificationRepository>();
 
 var app = builder.Build();
