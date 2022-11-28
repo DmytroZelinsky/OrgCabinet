@@ -1,4 +1,5 @@
 ﻿using BLL.Services.Abstraction;
+using DAL.Repositories.Abstraction;
 using EntityLayer.Entities.User;
 
 namespace BLL.Services.Implementation
@@ -6,6 +7,13 @@ namespace BLL.Services.Implementation
 
 	public class EmployeesService : IEmployeesService
 	{
+		private readonly IEmployeesRepository _employeesRepository;
+
+		public EmployeesService(IEmployeesRepository employeesRepository)
+		{
+			_employeesRepository = employeesRepository;
+		}
+
 		public Employee GetEmployeeDetails(int employeeId)
 		{
 			throw new NotImplementedException();
@@ -13,7 +21,7 @@ namespace BLL.Services.Implementation
 
 		public IEnumerable<Employee> GetEmployeesTrees()
 		{
-			throw new NotImplementedException();
+			return _employeesRepository.GetList();
 		}
 	}
 }

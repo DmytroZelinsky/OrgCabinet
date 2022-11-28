@@ -31,7 +31,9 @@ C:\Users\dzeli\source\repos\OrgCabinetMain\BLL\obj\Debug\net6.0\ref\BLL.dll
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\BLL.deps.json
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\BLL.dll
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\DAL.dll
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\DAL.pdb
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\EntityLayer.pdb
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
@@ -43,3 +45,5 @@ C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\BL
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\refint\BLL.dll
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\BLL.pdb
 C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\Utilities.dll
+C:\Users\dzeli\source\repos\GeneralOrgCabinet\OrgCabinet\BLL\bin\Debug\net6.0\Utilities.pdb

@@ -1,5 +1,6 @@
 ﻿using EntityLayer.Entities.Notification.Interface;
 using EntityLayer.Entities.Service.ServiceStates;
+using EntityLayer.Entities.User;
 using EntityLayer.Enums;
 
 namespace EntityLayer.Entities.Service
@@ -14,14 +15,16 @@ namespace EntityLayer.Entities.Service
 		private State _state { get; set; }
 
 		public int ClientId { get; set; }
-		
+		public Client Client { get; set; }
+
 		public int? SpecialistId { get; set; }
+		public Specialist? Specialist { get; set; }
 
 		public int? EmployeeId { get; set; }
 
 		public ServiceType ServiceType { get; set; }
 
-		public string ServiceDescription { get; set; }
+		public string? ServiceDescription { get; set; }
 
 		public string? Notes { get; set; }
 

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -11,19 +24,44 @@
         "runtime": {
           "bin/placeholder/EntityLayer.dll": {}
         }
+      },
+      "Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilities.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
     "EntityLayer/1.0.0": {
       "type": "project",
       "path": "../EntityLayer/EntityLayer.csproj",
       "msbuildProject": "../EntityLayer/EntityLayer.csproj"
+    },
+    "Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Utilities/Utilities.csproj",
+      "msbuildProject": "../Utilities/Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "EntityLayer >= 1.0.0"
+      "DAL >= 1.0.0",
+      "EntityLayer >= 1.0.0",
+      "Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,8 +93,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj"
+            },
             "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj": {
               "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj"
+            },
+            "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj": {
+              "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj"
             }
           }
         }

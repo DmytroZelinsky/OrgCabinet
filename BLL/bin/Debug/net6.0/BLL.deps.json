@@ -8,15 +8,33 @@
     ".NETCoreApp,Version=v6.0": {
       "BLL/1.0.0": {
         "dependencies": {
-          "EntityLayer": "1.0.0"
+          "DAL": "1.0.0",
+          "EntityLayer": "1.0.0",
+          "Utilities": "1.0.0"
         },
         "runtime": {
           "BLL.dll": {}
         }
       },
+      "DAL/1.0.0": {
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "runtime": {
+          "DAL.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "runtime": {
           "EntityLayer.dll": {}
+        }
+      },
+      "Utilities/1.0.0": {
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "runtime": {
+          "Utilities.dll": {}
         }
       }
     }
@@ -27,7 +45,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "EntityLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

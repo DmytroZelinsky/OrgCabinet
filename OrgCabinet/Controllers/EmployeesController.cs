@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL.Services.Abstraction;
+using EntityLayer.Entities.User;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +10,19 @@ namespace OrganizationCabinet.Controllers
 	[ApiController]
 	public class EmployeesController : ControllerBase
 	{
+		private readonly IEmployeesService _employeesService;
+
+		public EmployeesController(IEmployeesService employeesService)
+		{
+			_employeesService = employeesService;
+		}
+
 		// GET: api/<EmployeesController>
 		[HttpGet]
-		public IEnumerable<string> Get()
+		public IEnumerable<Employee> Get()
 		{
-			return new string[] { "value1", "value2" };
+
+			return _employeesService.GetEmployeesTrees();
 		}
 
 		// GET api/<EmployeesController>/5

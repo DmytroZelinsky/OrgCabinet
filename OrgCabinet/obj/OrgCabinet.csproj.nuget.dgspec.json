@@ -4,14 +4,140 @@
     "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj": {
+    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj",
-        "projectName": "OrgCabinet",
-        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj",
+        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\dzeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\obj\\",
+        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dzeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj"
+              },
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\dzeli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dzeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj",
+        "projectName": "EntityLayer",
+        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\dzeli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dzeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,7 +167,71 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj",
+        "projectName": "OrgCabinet",
+        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\OrgCabinet.csproj",
+        "packagesPath": "C:\\Users\\dzeli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\OrgCabinet\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dzeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\BLL\\BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -61,6 +251,66 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj",
+        "projectName": "Utilities",
+        "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\dzeli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dzeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ComponentOne.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\ComponentOne\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\dzeli\\source\\repos\\GeneralOrgCabinet\\OrgCabinet\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
