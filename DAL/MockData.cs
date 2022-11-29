@@ -459,7 +459,26 @@ namespace DAL
 
 		public static List<Notification> Notifications { get; set; } = new List<Notification>()
 		{
-
+			new ClientNotification()
+			{
+				DateCreated = new DateTime(2022, 12, 31, 5, 10, 20),
+				NotificationString = "Додано нового користувача: 7"
+			},
+			new ClientNotification()
+			{
+				DateCreated = new DateTime(2022, 12, 31, 5, 11, 20),
+				NotificationString = "Додано нового користувача: 8"
+			},
+			new ClientNotification()
+			{
+				DateCreated = new DateTime(2022, 12, 31, 5, 12, 20),
+				NotificationString = "Видалено користувача: 10"
+			},
+			new ClientNotification()
+			{
+				DateCreated = new DateTime(2022, 12, 31, 5, 13, 20),
+				NotificationString = "Додано нового користувача: 5"
+			},
 		};
 	}
 }
